@@ -1,0 +1,135 @@
+---
+title: "Data 206 Capstone Project"
+---
+
+## Installing libraries
+
+```{r}
+library(dplyr)
+library(ggplot2)
+```
+
+## Inviting the two data sets
+
+```{r}
+Impound <- read.csv("C:/Users/casti/OneDrive/Documents/Data 206 Capstone Project/.quarto/project-cache/Animal Impound.csv")
+Shelter <- read.csv("C:/Users/casti/OneDrive/Documents/Data 206 Capstone Project/.quarto/project-cache/Animal Pathway.csv") #Adding the two datasets
+
+```
+
+## Joining the data sets and viewing how many animals IDs linked 
+
+```{r}
+
+colnames(Impound)[colnames(Impound) == "Animal.identification.number"] <- "Animal.ID"
+colnames(Shelter)[colnames(Shelter) == "Animal.identification.number"] <- "Animal.ID" # Changing the name of the column to make it easier
+combined <- left_join(Impound,Shelter, by = "Animal.ID") #The merging of the two datasets
+sum(Impound$Animal.ID %in% Shelter$Animal.ID) # To see how many of the ID joined
+names(Shelter) # To see some of the variables for further exploration
+
+```
+
+\
+
+## My first attempt to create datetime variables for future analysis
+
+```{r}
+combined <- combined %>%
+  mutate(
+    Departure = mdy_hm(Departure.date.and.time),
+    Intake = mdy_hm(Impound.date.and.time), #Creating new variables for datetime to take the difference.
+    LengthOfStay = as.numeric(difftime(Departure, Intake, units = "days"))
+  )
+```
+
+```{r}
+Year_month <- combined %>%
+  filter(!is.na(Departure.date.and.time)) # Made a new dataframe for Yearmonth due to complications of doing it to combined dataframe and filter for no NAs
+
+Year_month$Departure.date.and.time[Year_month$Departure.date.and.time == ""] <- NA # Getting rid of negative space as some inputs in the row were " " to the word NA
+Year_month <- combined %>%
+  filter(!is.na(Departure.date.and.time)) # Had to do it twice as the spaces were now turned to NAs
+head(Year_month$Departure.date.and.time) # To check for NAs
+```
+
+```{r}
+Year_month$Departure.date.and.time <- as.POSIXct(
+ Year_month$Departure.date.and.time,
+  format = "%m/%d/%Y %H:%M" # Had to do this again different method to get the format right this time
+)
+Year_month$YearMonth <- format(Year_month$Departure.date.and.time, "%Y-%m")
+# Having year/month as a new variable to be part of my graph below to have a compact x axis
+```
+
+```{r}
+monthly_outcomes <- Year_month %>%
+  filter(!is.na(Departure.date.and.time)) %>% # making sure there is no NAs 
+  group_by(YearMonth, Outcome.type.y) %>% # To create a group for each month for each outcome
+  summarise(count = n(), .groups = "drop") #To make each outcome a new row for each month
+```
+
+\
+
+## First Graph for Project
+
+```{r}
+ggplot(monthly_outcomes, aes(x = YearMonth, y = count, fill = Outcome.type.y)) +
+  geom_bar(stat = "identity") + # Make sure that it uses the counts from montly income
+  theme_minimal() + # Add theme to my graph
+   geom_text(aes(label = count),
+            position = position_stack(vjust = 0.5), # This will center my count in the middle of each stack
+            size = 3,
+            color = "black") +
+  scale_fill_brewer(palette = "Set1")  + 
+  labs(
+    title = "Monthly Shelter Outcomes",
+    x = "Year/Month of Year 2025 to February 2026",
+    y = "Number of Animals",
+    fill = "Outcome Type"
+  ) +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) # This makes it possible so the x labels don't overlap
+
+```
+
+## Creating second data frame for my next graph
+
+```{r}
+Euthanized <- combined %>%
+  filter(Outcome.type.y == "EUTH") #Filter for Euthanization
+
+Euthanized <- Euthanized %>%
+  filter(!is.na(Pet.s.age.in.years)) #Remove any NAs
+Euthanized <- Euthanized %>%
+  mutate(
+    Age_group = case_when(
+      Pet.s.age.in.years < 1 ~ "Under 1", # Create age groups as every number will be hard to graph
+      Pet.s.age.in.years >= 1 & Pet.s.age.in.years < 3 ~ "1-3 Age group",
+      Pet.s.age.in.years >= 3 & Pet.s.age.in.years < 7 ~ "3-7 Age group",
+      Pet.s.age.in.years >= 7& Pet.s.age.in.years < 10 ~ "7-10 Age group",
+      Pet.s.age.in.years > 10 ~ "10+ Age group"
+    )
+  )
+Euthanized <- Euthanized %>%
+  filter(!is.na(Age_group), !is.na(Animal.type)) # Make sure any Nas are gone
+```
+
+## Second Graph
+
+```{r}
+ggplot(Euthanized, aes(x = Age_group, fill = Animal.type)) +
+  geom_bar(position = "dodge") +
+  theme_minimal() +
+   geom_text(
+    stat = "count",
+    aes(label = ..count..),
+    position = position_dodge(width = 0.9), #Helps align the number in the middle of each bar
+    vjust = -0.3, #Helps align the number in the middle of each bar
+    size = 3
+  ) +
+  labs(
+    title = "Animal Type by Age Group For all Euthanizations",
+    x = "Age Group",
+    y = "Count of Animals",
+    fill = "Animal Type"
+  )
+```
