@@ -3,7 +3,9 @@
 My capstone project plan will focus on animal welfare, primarily in Montgomery County. The two datasets are from Data Montgomery and are named OAS - Animal Impound and OAS – Animal Shelter Pathway. The two datasets contain information on animals impounded by the county shelter. The shelter is an open admission shelter that takes in lost, abandoned, and surrendered pets as well as injured/ill wildlife. The “Animal Shelter Pathway” dataset is rich with animal characteristics like: Animal type, Breed, Sex, and Age. While other dataset contains more information on intake type, outcome, time of entry/exit, and shelter location, including longitude/latitude data. The primary objective is to analyze variables within a one-year time window to provide the most current trends and findings. The only quality issue is with the OAS Animal Intake dataset, which confirms that animals enter the adoption process but lacks a variable to confirm if the animal has a place to call home. This raises the possibility of contacting the shelter that records all this data to obtain confirmation on the animals, whether they have been adopted or are still in search of a possible owner. Fortunately, the two animal datasets join easily due to their common variable of Animal ID, and little data is lost in the join. The huge concern for the project is to get the time variables prepped in MDYhms to create a new variable of total time spent by the animal in the shelter.
 ## Project Structure
 
-_ [Data](RawDatasets/) – raw and cleaned datasets  
+- [Capstone Project Code](Capstone%20Project%20Code/)
+- [Raw Datasets](Raw%20Datasets/)
+- [Exploratory Visualizations](Exploratory%20Visualizations/)  
  
  
 
