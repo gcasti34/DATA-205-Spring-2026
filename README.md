@@ -5,7 +5,11 @@ My capstone project plan will focus on animal welfare, primarily in Montgomery C
 
 - [Capstone Project Code](Capstone%20Project%20Code/)
 - [Raw Datasets](Raw%20Datasets/)
-- [Exploratory Visualizations](Exploratory%20Visualizations/)  
+- [Exploratory Visualizations](Exploratory%20Visualizations/)
+# Data cleaning/pre-processing:
+
+The two datasets were joined easily with a left join, as both datasets had the same variable, Animal ID. Through the join, I was able to retain around 85% of each dataset in the combined dataframe throughout the project. The process for the cleaning was fairly simple, involving renaming columns, which required the removal of periods and underscores. This made it easier to recall variables in my R code and in the creation of the graphs. The other issue was creating a new time variable to calculate the total time each animal spent from arrival to outcome. This required the arrival and departure date to be set to a POSIT time variable, and using the difftime function to get the difference between the times in days.
+
  
  
 
