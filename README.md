@@ -47,7 +47,9 @@ Method: Count entries by Shelter Location and bar chart
 Method: I will group outcome types with bite history and compare through some percentages. This will be shown through a stacked bar chart
 
 # Tools, methods and resources: 
- I will be using R for the first part of my project due to its statistical analysis and easy data visualization. The methods that I will use in R are summary statistics like averages, grouping, and counts. The main library I will use is ggplot2, along with the already installed R libraries dplyr and tidyr. The other program I will be using is Tableau to create the GIS map for my project. I find this program to be very user-friendly and much easier to create a GIS map than R. 
+ I will be using R for the first part of my project due to its statistical analysis and easy data visualization. The methods that I will use in R are summary statistics like averages, grouping, and counts. The main library I will use is ggplot2, along with the already installed R libraries dplyr and tidyr. The other program I will be using is Tableau to create the GIS map for my project. I find this program to be very user-friendly and much easier to create a GIS map than R.
+# Final Product/Tableau Link:
+https://public.tableau.com/app/profile/gabriel.castillo.lopez/viz/Update-AnimalShelterTableauMap/AnimalDashboard?publish=yes  
 
 
 
