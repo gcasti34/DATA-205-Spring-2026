@@ -56,7 +56,10 @@ Method: I will group outcome types with bite history and compare through some pe
 # Tools, methods and resources: 
  I will be using R for the first part of my project due to its statistical analysis and easy data visualization. The methods that I will use in R are summary statistics like averages, grouping, and counts. The main library I will use is ggplot2, along with the already installed R libraries dplyr and tidyr. The other program I will be using is Tableau to create the GIS map for my project. I find this program to be very user-friendly and much easier to create a GIS map than R.
 # Final Product/Tableau Link:
-https://public.tableau.com/app/profile/gabriel.castillo.lopez/viz/Update-AnimalShelterTableauMap/AnimalDashboard?publish=yes  
+https://public.tableau.com/app/profile/gabriel.castillo.lopez/viz/Update-AnimalShelterTableauMap/AnimalDashboard?publish=yes 
+# References and acknowledgements:
+	I would like to acknowledge my professor, Lori Perine, for all the help and guidance she provided to get the resources and advice to better my project. I will also acknowledge Victoria Liu for helping me find people who are in charge of the two datasets for further questions on the variables and questions about my results. Thank you to Maria Anselmo for answering all the questions I had on the datasets. 
+
 
 
 
