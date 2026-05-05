@@ -58,7 +58,7 @@ Method: I will group outcome types with bite history and compare through some pe
 # Final Product/Tableau Link:
 https://public.tableau.com/app/profile/gabriel.castillo.lopez/viz/Update-AnimalShelterTableauMap/AnimalDashboard?publish=yes 
 # References and acknowledgements:
-	I would like to acknowledge my professor, Lori Perine, for all the help and guidance she provided to get the resources and advice to better my project. I will also acknowledge Victoria Liu for helping me find people who are in charge of the two datasets for further questions on the variables and questions about my results. Thank you to Maria Anselmo for answering all the questions I had on the datasets. 
+I would like to acknowledge my professor, Lori Perine, for all the help and guidance she provided to get the resources and advice to better my project. I will also acknowledge Victoria Liu for helping me find people who are in charge of the two datasets for further questions on the variables and questions about my results. Thank you to Maria Anselmo for answering all the questions I had on the datasets. 
 
 
 
