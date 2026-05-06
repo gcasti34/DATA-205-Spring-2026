@@ -236,5 +236,5 @@ summary_data <- combined %>%
   group_by(Outcome.type.y) %>%
   summarise(count = n()) %>%
   mutate(percentage = count / sum(count) * 100)
-view(summary_data)
+head(summary_data)
 ```
