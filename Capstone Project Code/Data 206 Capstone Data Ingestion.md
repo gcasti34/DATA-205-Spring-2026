@@ -229,12 +229,5 @@ Bite_animal <- combined %>%
     13 2026-01      25.7 
     14 2026-02      18.1 
     15 <NA>        NaN   
-## Creating a new dataframe to get all the animal outcomes in percentage
-``` r
-summary_data <- combined %>%
-  filter(!is.na(Outcome.type.y)) %>%       # remove missing outcomes
-  group_by(Outcome.type.y) %>%
-  summarise(count = n()) %>%
-  mutate(percentage = count / sum(count) * 100)
-head(summary_data)
-```
+
+
