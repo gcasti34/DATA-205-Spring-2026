@@ -6,6 +6,9 @@ My capstone project plan will focus on animal welfare, primarily in Montgomery C
 - [Capstone Project Code](Capstone%20Project%20Code/)
 - [Raw Datasets](Raw%20Datasets/)
 - [visuals](visuals/)
+# Goals:
+The goal of the capstone project is to analyze shelter data by examining intake type, breed, age, length of stay, outcome, and other variables to determine which factors have the greatest influence on animal outcomes. Providing valuable information to pet owners surrendering their pets and shelters to reduce impounds and improve adoption rates.
+
 # Data cleaning/pre-processing:
 
 The two datasets were joined easily with a left join, as both datasets had the same variable, Animal ID. Through the join, I was able to retain around 85% of each dataset in the combined dataframe throughout the project. The process for the cleaning was fairly simple, involving renaming columns, which required the removal of periods and underscores. This made it easier to recall variables in my R code and in the creation of the graphs. The other issue was creating a new time variable to calculate the total time each animal spent from arrival to outcome. This required the arrival and departure date to be set to a POSIT time variable, and using the difftime function to get the difference between the times in days.
