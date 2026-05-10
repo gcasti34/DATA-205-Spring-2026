@@ -62,10 +62,19 @@ Method: I will group outcome types with bite history and compare them through so
 # Key Findings
 ![Graph](visuals/Animal%20Outcomes%20by%20percent.png)
 
-The graph shows that most animals are getting adopted with 62.2%, while the Return to owner and euthanizations follow it.  
+The graph shows that most animals are getting adopted with 62.2%, while the Return to owner 16.2%, and euthanizations 10.4% follow it.  
 ![Graph2](visuals/Animal%20Type%20by%20Age%20Group%20Euthanizations.png)
 
 This bar chart clearly shows the age distribution of the animals that were euthanized. Most of the animals euthanized fall in the ages of 1- 7, and mostly dogs. However, the 10+ age group only consists of dogs and cats, and is the third largest age group for euthanizing. The main observation is that dogs and cats make up most of the groups throughout every age group, but most animals are euthanized in the ages 1-7 and 10+. 
+
+![Graph3](visuals/Average%20Shelter%20Stay.png)
+
+The line chart shows mostly an upward trend peaking in August and December. In August, the average animal stayed around 22 days, while in December it peaked at 26 days. These two numbers are way too long, and it’s a sad analysis that around these months are also when there are the most animals, as the shelters try to keep the animals as long as possible so they can be able to get adopted. Numbers around the start of the year of 2025 should be the average throughout the year of  <10 days on average. But the averages kept going up through the year and started to fall in February. 
+
+![Graph4](visuals/Euthansia%20Rate%20by%20intake.png)
+
+The bar chart shows that Euthanasia Required is the highest cause, with around 76% that the shelters euthanizing the animals. However, the second most cases is when the animal is brought in as a stray, with less than 10% of the cases. The owner's surrenders also make up less than 10 %. 
+
 
 
 
