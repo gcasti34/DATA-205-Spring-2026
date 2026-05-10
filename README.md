@@ -65,8 +65,15 @@ The combined Dataset has a lot of good variables that I was able to explore. The
  I will be using R for the first part of my project due to its statistical analysis and easy data visualization. The methods that I will use in R are summary statistics like averages, grouping, and counts. The main library I will use is ggplot2, along with the already installed R libraries dplyr and tidyr. The other program I will be using is Tableau to create the GIS map for my project. I find this program to be very user-friendly and much easier to create a GIS map than R.
 # Final Product/Tableau Link:
 https://public.tableau.com/views/AnimalShelterUser-InterfaceTableau/AnimalDashboard?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link 
-# References and acknowledgements:
+# Acknowledgements:
 I would like to acknowledge my professor, Lori Perine, for all the help and guidance she provided to get the resources and advice to better my project. I will also acknowledge Victoria Liu for helping me find people who are in charge of the two datasets for further questions on the variables and questions about my results. Thank you to Maria Anselmo for answering all the questions I had on the datasets. 
+# References:
+Leybengrub, N. (2025, October 6). Economic hardship drives overcrowding at Maryland’s animal shelters. The Banner. https://www.thebanner.com/community/local-news/housing-insecurity-animal-shelter-overcrowding-NDIV52NSC5DRHKDBUAUYF26HCM/ 
+Maryland demographics: Maryland Business Data. business.maryland.gov. (2025, January 13). https://business.maryland.gov/plan-your-move/demographics/  
+Montgomery County, M. (2026, May 10). Oas - animal impound: Open Data Portal. OAS - Animal Impound | Open Data Portal. https://data.montgomerycountymd.gov/Public-Safety/OAS-Animal-Impound/6nf9-ewgt/about_data 
+Montgomery County, M. (2026b, May 10). Oas - Animal Shelter Pathway: Open data portal. OAS - Animal Shelter Pathway | Open Data Portal. https://data.montgomerycountymd.gov/Public-Safety/OAS-Animal-Shelter-Pathway/hsz7-ef2y/about_data 
+<img width="2523" height="144" alt="image" src="https://github.com/user-attachments/assets/4ec72922-b49c-4d19-a9e0-195f035461d4" />
+
 
 
 
