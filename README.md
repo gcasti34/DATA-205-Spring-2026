@@ -63,6 +63,11 @@ Method: I will group outcome types with bite history and compare them through so
 ![Graph](visuals/Animal%20Outcomes%20by%20percent.png)
 
 The graph shows that most animals are getting adopted with 62.2%, while the Return to owner and euthanizations follow it.  
+![Graph](visuals/Animal%20Types%20by%20Age%20Group%20Euthanizations.png)
+
+This bar chart clearly shows the age distribution of the animals that were euthanized. Most of the animals euthanized fall in the ages of 1- 7, and mostly dogs. However, the 10+ age group only consists of dogs and cats, and is the third largest age group for euthanizing. The main observation is that dogs and cats make up most of the groups throughout every age group, but most animals are euthanized in the ages 1-7 and 10+. 
+
+
 
 # Basic descriptive statistics:
 
