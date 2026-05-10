@@ -61,6 +61,7 @@ Method: Count entries by Shelter Location and bar chart
 Method: I will group outcome types with bite history and compare them through some percentages. This will be shown through a stacked bar chart
 # Key Findings
 ![Graph](visuals/Animal%20Outcomes%20by%20percent.png)
+
 The graph shows that most animals are getting adopted with 62.2%, while the Return to owner and euthanizations follow it.  
 
 # Basic descriptive statistics:
