@@ -58,7 +58,11 @@ Method: Count entries by Shelter Location and bar chart
 
 ·       Does the animal bite history affect its outcome?
 
-Method: I will group outcome types with bite history and compare through some percentages. This will be shown through a stacked bar chart
+Method: I will group outcome types with bite history and compare them through some percentages. This will be shown through a stacked bar chart
+# Key Findings
+![Graph](visuals/Animal%20Outcomes%20by%20percent.png)
+The graph shows that most animals are getting adopted with 62.2%, while the Return to owner and euthanizations follow it.  
+
 # Basic descriptive statistics:
 
 The combined Dataset has a lot of good variables that I was able to explore. The key variables I examined were the Age, Bite history, Breed, Outcome, and Animal type. Another variable I used was the days-spent variable for each animal, which I calculated from the arrival and departure dates. The two quantitative variables I had a mean analysis on were the age and the days spent. The mean for days spent was 17.30, while the age mean was 3.74. The age mean surprised me the most because I thought it would be at least 5+, but many animals are entering the shelter system at a very young age. The number of days spent is also concerning because 17 days is a long time for these animals to be without homes, and this is what I proposed to help reduce the time by examining data. 
