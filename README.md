@@ -75,6 +75,22 @@ The line chart shows mostly an upward trend peaking in August and December. In A
 
 The bar chart shows that Euthanasia Required is the highest cause, with around 76% that the shelters euthanizing the animals. However, the second most cases is when the animal is brought in as a stray, with less than 10% of the cases. The owner's surrenders also make up less than 10 %. 
 
+![Graph5](visuals/Monthly%20Shelter%20Outcomes.png)
+
+The bar chart shows that throughout July, August, and December, these are the months that have the most impounds. The big observation is that Adoption ranks the highest outcome for each month for the animals. This is a huge positive for the animals, and the second ranking outcome is the return to the owner, which is seen in the yellow. This shows that the shelter system does a good job in returning lost animals to their owners. However, the big issue is that the numbers for euthanizing are high, and this is where my project will focus on reducing by analyzing the trends of the animals that fall under this terrible outcome. 
+
+![Graph6](visuals/Outcome%20with&20bite%20history.png)
+
+The chart shows that most animals that have a bite history are saved and adopted to a new home. But the euthanization cases rank 2, with around 140 cases when the animal has a bite history. 
+
+![Graph7](visuals/Outcomes%20with%20no%20bite%20history.png)
+
+The chart also shows that most animals that have no bite history are, for the most part, adopted. But unlike with bite history, these animals are mostly returned to their owners.
+
+![Graph8](visuals/Top%20Breeds.png)
+![Graph7](visuals/Top%2010%20Breeds%20by%20Adoption%20Rate.png)
+
+The top graphs show that most of the animals being impounded are the Domestic Shorthair Cat being over 2,500 cases. Following the shorthair will be the American Pitbull Terrier with around 500 cases. These two animals are the most impounded, but only the Domestic Shorthair pops up in the top 10 most adopted breeds. It goes to show that the reputation the Pitbull has terrible toll for being adopted in Maryland. Sadly, in Prince George, they aren’t allowed to be adopted, so shelters are forced to look for rescue groups outside the county (Leybengrub, 2025). However, Shelter is striving to reach 40 dog adoptions or foster a week to avoid overcrowding (Leybengrub, 2025). These two graphs highlight that even the most impounded animals aren’t going to be the most adopted in percentage, as more niche pets like tropical, Parakeet, and Finches. This suggests that owners who are looking to surrender their Pitbulls or Shorthairs do everything possible to keep the pet or give it to a family member. 
 
 
 
@@ -83,7 +99,7 @@ The bar chart shows that Euthanasia Required is the highest cause, with around 7
 The combined Dataset has a lot of good variables that I was able to explore. The key variables I examined were the Age, Bite history, Breed, Outcome, and Animal type. Another variable I used was the days-spent variable for each animal, which I calculated from the arrival and departure dates. The two quantitative variables I had a mean analysis on were the age and the days spent. The mean for days spent was 17.30, while the age mean was 3.74. The age mean surprised me the most because I thought it would be at least 5+, but many animals are entering the shelter system at a very young age. The number of days spent is also concerning because 17 days is a long time for these animals to be without homes, and this is what I proposed to help reduce the time by examining data. 
 
 
-# Tools, methods and resources: 
+# Tools, methods, and resources: 
  I will be using R for the first part of my project due to its statistical analysis and easy data visualization. The methods that I will use in R are summary statistics like averages, grouping, and counts. The main library I will use is ggplot2, along with the already installed R libraries dplyr and tidyr. The other program I will be using is Tableau to create the GIS map for my project. I find this program to be very user-friendly and much easier to create a GIS map than R.
 # Final Product/Tableau Link:
 https://public.tableau.com/views/AnimalShelterUser-InterfaceTableau/AnimalDashboard?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link 
