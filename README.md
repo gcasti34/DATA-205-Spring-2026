@@ -79,7 +79,7 @@ The bar chart shows that Euthanasia Required is the highest cause, with around 7
 
 The bar chart shows that throughout July, August, and December, these are the months that have the most impounds. The big observation is that Adoption ranks the highest outcome for each month for the animals. This is a huge positive for the animals, and the second ranking outcome is the return to the owner, which is seen in the yellow. This shows that the shelter system does a good job in returning lost animals to their owners. However, the big issue is that the numbers for euthanizing are high, and this is where my project will focus on reducing by analyzing the trends of the animals that fall under this terrible outcome. 
 
-![Graph6](visuals/Outcome%20with&20bite%20history.png)
+![Graph6](visuals/Outcome%20with%20bite%20history.png)
 
 The chart shows that most animals that have a bite history are saved and adopted to a new home. But the euthanization cases rank 2, with around 140 cases when the animal has a bite history. 
 
